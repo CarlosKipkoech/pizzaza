@@ -35,7 +35,7 @@ Yet to fix website responsiveness
 ## Support and contact details 🙂
 To make a contribution to the code used or any suggestions you can click on the contact link and email me your suggestions.
 * Email: Carlos.kipkoech77@gmail.com
-* Phone: +254758837521
+* Phone: 0758837521
 ## License
 MIT License
 ```
