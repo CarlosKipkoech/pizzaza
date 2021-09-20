@@ -20,7 +20,7 @@
  * Javascript
  * jQuery
 
-## 
+## Setup/Installation Requirements
 
 * Live link to view the project vie this link<a href="https://DWN7777.github.io/delani-studio/">Pizzaza</a>
 ## Some Screenshots
