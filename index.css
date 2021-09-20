@@ -100,13 +100,13 @@ nav {
 }
 #the-cart {
   position: absolute;
-  width: 34em;
-  height: 20em;
+  width: 40em;
+  height: 23em;
   top: 85em;
   left: 23em;
   z-index: 101;
-  background-image: url(img/checkoutbg.jpg);
-  box-shadow: 3px 3px 25px white;
+  background-color: rgb(77, 74, 74);
+
   border-radius: 12px;
 }
 
@@ -308,4 +308,20 @@ label {
 }
 #location-input-details {
   display: none;
+}
+#deliveryMethodModalLabel {
+  padding-left: 33%;
+}
+.btn-close {
+  background-color: none;
+  color: black;
+}
+.times2 {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.modal-content {
+  background-color: rgb(77, 74, 74);
+  color: white;
 }

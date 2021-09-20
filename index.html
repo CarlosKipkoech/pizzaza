@@ -241,25 +241,20 @@
           aria-labelledby="deliveryMethodModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog delivery-modal modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="deliveryMethodModalLabel">
-                  DELIVERY METHOD
+                <h5 class="modal-title text-center" id="deliveryMethodModalLabel">
+                  DELIVERY
                 </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
+                <span class="times2">&times;</span>
               </div>
 
               <div class="modal-body">
                 <!-- input modal -->
                 <div id="select-delivery-method">
                   <p>
-                    How do you want your order delivered?
+                   How do you want to access your order?
                     <span class="text-center">*</span>
                   </p>
                   <p class="delivery-option text-danger"></p>
@@ -272,7 +267,7 @@
                       value="pickup"
                     />
                     <label class="form-check-label" for="deliveryMethod1"
-                      >Pickup</label
+                      >Pickup Station</label
                     >
                   </div>
                   <div class="form-check">
@@ -284,11 +279,11 @@
                       value="delivery"
                     />
                     <label class="form-check-label" for="deliveryMethod2"
-                      >Home or Office Address</label
+                      >Home or office</label
                     >
                     <p>
-                      Kindly note that add additional delivery amount of
-                      <span class="color-palace">Ksh 200</span> will be added to
+                      we charge an add additional  amount of
+                      <span class="color-palace">Ksh 150</span> will be added to
                       your total for delivery charges
                     </p>
                   </div>
@@ -296,7 +291,7 @@
                   <div class="location mt-5">
                     <form id="delivery-form">
                       <div id="location-input-details">
-                        <h5>Delivery Details</h5>
+                        <h5>Delivery Information</h5>
                         <p class="text-danger error-delivery-location"></p>
                         <div class="row">
                           <div class="col-md-6">
@@ -342,15 +337,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label"
-                                >Additional Information</label
-                              >
-                              <textarea
-                                name="additionalInfo"
-                                class="form-control"
-                                id="additionalInfo"
-                                rows="2"
-                              ></textarea>
+                              
                             </div>
                           </div>
                         </div>
@@ -359,14 +346,14 @@
                       <div class="modal-footer">
                         <button
                           type="button"
-                          class="d-btn"
+                          class="d-btn6"
                           data-bs-dismiss="modal"
                         >
                           Close
                         </button>
                         <button
                           type="submit"
-                          class="d-btn"
+                          class="d-btn7"
                           id="checkout-button"
                         >
                           Checkout

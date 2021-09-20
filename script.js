@@ -15,6 +15,7 @@ $(document).ready(function () {
   });
   $(".d-btn").click(function () {
     $("#the-cart").hide();
+    $(".delivery-modal").show();
   });
 
   $(".times").click(function () {
@@ -25,6 +26,10 @@ $(document).ready(function () {
   $(".carda").click(function () {
     $("#order-sectionn").show();
     $(".overlay").show();
+  });
+  $(".times2").click(function () {
+    $(".delivery-modal").hide();
+    $(".overlay").hide();
   });
   $(".cart-btn button").click(function () {
     const selector = $("#inputGroupSelect01").find(":selected").text();
@@ -224,8 +229,8 @@ $(document).ready(function () {
         $("#error").text("*Flavor, size and crust fields required* ");
         return;
       } else {
-        $(".carted").fadeIn(1500, function () {
-          $(".carted").delay(1000).fadeOut(1000);
+        $(".carted").fadeIn(300, function () {
+          $(".carted").delay(1000).fadeOut(1600);
           $(".badge").show();
         });
       }
@@ -342,7 +347,7 @@ $(document).ready(function () {
             console.log(cart);
             $("#select-delivery-method").hide();
             $(".delivery-head").append(`
-                      <div class="alert alert-success" role="alert">Hello ${customerName}. Order successfully processed. Your order will be delivered to your location(${customerLocation})</div>
+                      <div class="alert text-light bg-dark alert-success" role="alert">Success! ${customerName}. Order successfully processed. Your order will be delivered to your location(${customerLocation})</div>
                           <div class="d-flex justify-content-between">
                               <div>
                                   <h5>Order Summary</h5>
@@ -392,7 +397,7 @@ $(document).ready(function () {
             console.log(getTotalPlusDeliveryFee);
             $("#select-delivery-method").hide();
             $(".delivery-head").append(`
-                      <div class="alert alert-success" role="alert">Hello. Order successfully processed. Your order will be delivered to your pickup point</div>
+                      <div class="alert text-light bg-dark alert-success" role="alert">Success! Order successfully processed. Your order will be delivered to your pickup point</div>
                           <div class="d-flex justify-content-between">
                               <div>
                                   <h5>Order Summary</h5>
