@@ -5,7 +5,7 @@
  | Pizzaza website contains a pizza Vending shop.
 ## Setup Requirements
 * Git
-* Web-browser or your choice
+* compatible web browser like chrome, mozilla etc
 * Github
 
 ## Setup Installation
