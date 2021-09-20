@@ -1,8 +1,8 @@
-# pizzaza 
+# pizzaz
 
 #### Created By Carlos Kipkoech on 20 Sep 2021
 ## Description
- | Pizzaza website contains a pizza Vending shop.
+  Pizzaza website contains a pizza Vending shop.
 ## Setup Requirements
 * Git
 * compatible web browser like chrome, mozilla etc
