@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Pizzaza</title>
+  </head>
+  <body>
+    <img class="navmenu" src="img/nav-menu-icon.png" width="35px" alt="" />
+    <nav class="navabar d-flex align-items-center">
+      <div>
+        <img src="img/ezgif.com-gif-maker.gif" alt="" width="" />
+      </div>
+      <div class="navbarbrand" style="font-family: 'Arvo', serif">
+        <p>Pizzaza</p>
+        <p
+          style="
+            font-size: 19px;
+            letter-spacing: normal;
+            padding-left: 30%;
+            margin-top: -5%;
+            color: orange;
+          "
+        >
+          We are serious about Pizza
+        </p>
+      </div>
+    </nav>
+    <div>
+      <img src="" width="180px" style="position: absolute" alt="" />
+      <img
+        src="img/pepper_adobespark.png"
+        width="280px"
+        style="position: absolute; top: 73%; left: 67%"
+        alt=""
+      />
+    </div>
+    <div class="showcase">
+      <h3 class="del-title"><span>DELIVERY</span></h3>
+      <p style="font-size: 19px">
+        Never sit around and wait for someone unless they’re delivering a pizza
+      </p>
+      <p style="padding-left: 55%; padding-bottom: 5%">
+        Did you Know we saved almost four thousand gallons of gas last year by
+        delivering on bike?And we began piloting an ebike program for our
+        delivery team. <br />
+        <br />
+        Good for you, Good for earth
+      </p>
+      <button>MENU</button>
+    </div>
+    <section id="order" class="p-5 bg-dark">
+      <div class="container">
+        <div class="d-flex start align-items-center">
+          <div>
+            <h2 class="text-light">Start Your order</h2>
+          </div>
+          <div>
+            <i class="fas fa-cart-plus" style="position:relative"
+              ><span class="badge position-absolute">0</span>
+            </i>
+          </div>
+        </div>
+        <p class="lead text-center text-white mb-5">
+          Select your favorite pizza,crust and toppings then view your cart
+        </p>
+        <div class="order-section" id="order-section">
+          <div class="container">
+            <div class="row">
+
+            <div class="d-flex starta"> 
+              <div id="order-sectionn">
+                <div class="col-md-6">
+                  <form id="order-form">
+                    <div class="form-group">
+                      <label for
+                        >Select Favorite Pizza<span class="text-danger"
+                          >*</span
+                        ></label
+                      >
+                      <select class="form-control" id="pizza" name="pizza">
+                        <option  class='optiona'value selected disabled>
+                          Choose pizza Name
+                        </option>
+                      
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for>Size<span class="text-danger">*</span></label>
+                      <select class="form-control" id="size" name="size">
+                        <option class='optiona' value selected disabled>
+                          Select Pizza Size
+                        </option>
+                      
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for>Crust<span class="text-danger">*</span></label>
+                      <select class="form-control" id="crust" name="crust">
+                        <option class='optiona' value selected disabled>Select Crust</option>
+                        
+                      </select>
+                    </div>
+                    
+                   
+                    <div class="mt-4 text-start">
+                      <button class="form-button">Add to Cart</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="form-group">
+              <p id="toppings">
+               <img src="img/info.png"  width='30px'alt=""></i> Each topping @ Kes 150
+              </p>
+              <div class="row-toppings">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="toppings[]"
+                      type="checkbox"
+                      id="Pepperoni"
+                      value="Pepperoni"
+                    />
+                    <label class="form-check-label" for="Pepperoni"
+                      >Pepperoni</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="toppings[]"
+                      type="checkbox"
+                      id="Mushroom"
+                      value="Mushroom"
+                    />
+                    <label class="form-check-label" for="Mushroom"
+                      >Mushroom</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="toppings[]"
+                      type="checkbox"
+                      id="Olives"
+                      value="Olives"
+                    />
+                    <label class="form-check-label" for="Black-Olives"
+                      >Olives</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div></div>
+              
+              <div id="the-cart">
+                <h5 class=" p-2 text-center your-cart text-warning">Your Cart <span class="times">&times;</span></h5>
+              <div class="col-md-6">
+                <table class="table table-responsive order-table">
+                  <thead>
+                    <tr>
+                      <th >Name</th>
+                      <th>Size</th>
+                      <th>Crust</th>
+                      <th>Topping</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                    <tr>
+                      <td class="empty-cart text-center ">
+                        <img src="img/emptycart.png"  width='200px' alt="Cart Image" />
+                        <br />
+                        Nothing is here...
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="text-end">
+                  <p class="grand-total">
+                    Total Cost: Ksh <span class="text-bold">0</span>
+                  </p>
+                </div>
+
+                <div class="delivery-button float-end">
+                  <button
+                    class="d-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deliveryMethodModal"
+                  >
+                    Proceed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Delivery Modal Section-->
+        <div
+          class="modal fade"
+          id="deliveryMethodModal"
+          tabindex="-1"
+          aria-labelledby="deliveryMethodModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="deliveryMethodModalLabel">
+                  DELIVERY METHOD
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- input modal -->
+                <div id="select-delivery-method">
+                  <p>
+                    How do you want your order delivered?
+                    <span class="text-center">*</span>
+                  </p>
+                  <p class="delivery-option text-danger"></p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="deliveryMethod"
+                      id="deliveryMethod1"
+                      value="pickup"
+                    />
+                    <label class="form-check-label" for="deliveryMethod1"
+                      >Pickup</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="deliveryMethod"
+                      id="deliveryMethod2"
+                      value="delivery"
+                    />
+                    <label class="form-check-label" for="deliveryMethod2"
+                      >Home or Office Address</label
+                    >
+                    <p>
+                      Kindly note that add additional delivery amount of
+                      <span class="color-palace">Ksh 200</span> will be added to
+                      your total for delivery charges
+                    </p>
+                  </div>
+
+                  <div class="location mt-5">
+                    <form id="delivery-form">
+                      <div id="location-input-details">
+                        <h5>Delivery Details</h5>
+                        <p class="text-danger error-delivery-location"></p>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Name <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="name"
+                                id="customerName"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Phone Number
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="number"
+                                class="form-control"
+                                name="phone"
+                                id="customerPhone"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Location
+                                <span class="text-danger">*</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="location"
+                                id="customerLocation"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Additional Information</label
+                              >
+                              <textarea
+                                name="additionalInfo"
+                                class="form-control"
+                                id="additionalInfo"
+                                rows="2"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="d-btn"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          type="submit"
+                          class="d-btn"
+                          id="checkout-button"
+                        >
+                          Checkout
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- div to display the summary of all the orders -->
+                <div id="summary-order">
+                  <div class="delivery-head"></div>
+                  <div class="delivery-bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+    <div class="carted">
+      <p class="text-center">Your Item was added to Cart,click cart to view</p>
+    </div>
+
+    <!--NJIHIA-->
+
+    <!--end of navigation-->
+    <div class="content-container">
+      <!--whats new-->
+
+      <!--content-->
+      <div class="content">
+        <!--row 1-->
+
+        <!--row 2-->
+        <div class="second-row"></div>
+        <!--order form section-->
+        
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
